@@ -1,0 +1,18 @@
+# OpenClaw Automations - Python Dependencies
+# Version: 1.0.0
+
+# Core dependencies
+Pillow>=10.0.0          # Image processing
+reportlab>=4.0.0        # PDF generation
+
+# Development dependencies (optional)
+# black>=23.0.0          # Code formatting
+# flake8>=6.0.0          # Linting
+# pytest>=7.0.0          # Testing
+
+# Installation:
+# pip install -r requirements.txt
+# or with virtual environment:
+# python3 -m venv venv
+# source venv/bin/activate
+# pip install -r requirements.txt

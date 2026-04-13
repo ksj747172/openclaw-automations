@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.user.cleanup_screenshots</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/ABSOLUTE/PATH/TO/cleanup_screenshots_biweekly.sh</string>
+        <string>14</string>
+    </array>
+    <key>StartCalendarInterval</key>
+    <dict>
+        <!-- 매주 월요일 오전 9시에 실행 (스크립트 내에서 2주마다 실행 여부 결정) -->
+        <key>Weekday</key>
+        <integer>1</integer>
+        <key>Hour</key>
+        <integer>9</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+    <key>RunAtLoad</key>
+    <false/>
+    <key>StandardOutPath</key>
+    <string>/Users/YOUR_USERNAME/Library/Logs/cleanup_screenshots.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/YOUR_USERNAME/Library/Logs/cleanup_screenshots.err.log</string>
+</dict>
+</plist>

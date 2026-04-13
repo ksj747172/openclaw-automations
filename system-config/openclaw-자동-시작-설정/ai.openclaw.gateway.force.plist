@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>ai.openclaw.gateway.force</string>
+    
+    <key>Comment</key>
+    <string>OpenClaw Gateway with Force Option (v2026.4.11)</string>
+    
+    <!-- 부팅 시 자동 실행 -->
+    <key>RunAtLoad</key>
+    <true/>
+    
+    <!-- 충돌 시 자동 재시작 -->
+    <key>KeepAlive</key>
+    <true/>
+    
+    <!-- 네트워크 사용 가능 시 실행 -->
+    <key>LaunchOnlyOnce</key>
+    <false/>
+    
+    <key>ProgramArguments</key>
+    <array>
+        <string>/opt/homebrew/bin/openclaw</string>
+        <string>gateway</string>
+        <string>--force</string>
+    </array>
+    
+    <!-- 작업 디렉토리 -->
+    <key>WorkingDirectory</key>
+    <string>/Users/hongmin</string>
+    
+    <!-- 환경 변수 -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>HOME</key>
+        <string>/Users/hongmin</string>
+        <key>OPENCLAW_FORCE</key>
+        <string>true</string>
+    </dict>
+    
+    <!-- 표준 출력/에러 로그 -->
+    <key>StandardOutPath</key>
+    <string>/Users/hongmin/.openclaw/logs/gateway-force.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/hongmin/.openclaw/logs/gateway-force.err.log</string>
+    
+    <!-- 프로세스 우선순위 -->
+    <key>Nice</key>
+    <integer>1</integer>
+    
+    <!-- 네트워크 사용 가능 시 실행 -->
+    <key>StartOnMount</key>
+    <true/>
+</dict>
+</plist>
